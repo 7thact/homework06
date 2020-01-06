@@ -13,7 +13,11 @@
 
 <body>
     <div class="container"></div>
-    <h1> Weather Forecast</h1>
+        <div class="cardHeader text-center">
+            <div class="card-body">
+                <h1 class="card-text">Weather Forecast</h1>
+            </div>
+        </div>
 
     <!-- //what do we need?:
     //to get weather data from api
@@ -33,66 +37,83 @@
     <div id="currentWeather"></div>
 
     <div class="jumbotron">
-        <h1 class="display-4">Current Weather</h1>
-        <form id ="search">
+        <h1 class="display-4">Weather Search</h1>
+        <form id="search">
             <label for="weather-input">City Search</label>
             <input type="text" id="weather-input">
             <input id="add-weather" type="submit" value="Search">
         </form>
+        <div class="row justify-content-end">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Weather</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <br>
-        <button type="button" class="btn btn-primary btn-lg">New York, NY</button>
-        <button type="button" class="btn btn-primary btn-lg">Washington DC</button>
-        <button type="button" class="btn btn-primary btn-lg">Denver</button>
-        <button type="button" class="btn btn-primary btn-lg">Portland, OR</button>
-        <button type="button" class="btn btn-primary btn-lg">Los Angles, CA</button>
-         
+        <button type="button" class="btn btn-primary btn-sm">New York, NY</button>
+        <button type="button" class="btn btn-primary btn-sm">Washington DC</button>
+        <button type="button" class="btn btn-primary btn-sm">Denver</button>
+        <button type="button" class="btn btn-primary btn-sm">Portland, OR</button>
+        <button type="button" class="btn btn-primary btn-sm">Los Angles, CA</button>
+
+    </div>
+    <div class="cardContainer">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-2">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-2">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
+    <div class="cardFooter text-center">
+        <div class="card-body">
+            <p class="card-text">Copyright&#9400 C.Cressey</p>
         </div>
     </div>
 
@@ -106,7 +127,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>
