@@ -26,8 +26,8 @@
         //city name, date, temperature, humidity, wind speed, uv index
     //let the user search for a city
         //input form
-    //have 5 major cities listed to selected
-        //buttons
+            //have 5 major cities listed to selected
+                //buttons
     //save recent searches to local storage
         //link to local storage
     //show current weather conditions for searched city
@@ -37,14 +37,23 @@
     <div id="currentWeather"></div>
 
     <div class="jumbotron">
-        <h1 class="display-4">Weather Search</h1>
+        <h1 class="display-2">Weather Search</h1>
         <form id="search">
             <label for="weather-input">City Search</label>
             <input type="text" id="weather-input">
             <input id="add-weather" type="submit" value="Search">
         </form>
         <div class="row justify-content-end">
-            <div class="col-sm-6">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Past searches</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-sm-4 ">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Current Weather</h5>
